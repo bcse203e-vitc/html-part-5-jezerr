@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 5%;
+  margin: 10%;
+  background-color: red;
+  border: 5px solid yellow;
+  transition: border 0.3s ease;
+}
+.box:hover {
+  border-width: 10px;
+  border-color: pink;
+}
