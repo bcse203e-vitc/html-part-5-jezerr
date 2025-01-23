@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 600px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 4px;
+    background-color: gold;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+    width: 4px;
+    height: 20px;
+    background-color: black;
+}
+.event {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 50px;
+}
+.event::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border: 3px solid green;
+    border-radius: 50%;
+    z-index: 1;
+}
+.event:nth-child(2)::before {
+    border-color: violet;
+}
+.event:nth-child(3)::before {
+    border-color: green;
+}
+.event:nth-child(4)::before {
+    border-color: grey;
+}
+.event h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+.event p {
+    margin: 0;
+    color: violet;
+}
