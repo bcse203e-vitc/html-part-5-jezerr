@@ -1,0 +1,38 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+   
+    height:100vh;
+}
+
+form{
+    background-color: beige;
+    border-radius: 5px;
+    border:10 px solid black;
+    padding:30px;
+}
+input[type="text"],input[type="password"]{
+    border-radius: 5px;
+    padding:10px;
+    margin:10px;
+    border:1px solid white;
+}
+button{
+    background-color:aqua;
+    border-radius:3px;
+
+}
+input[type="checkbox"]{
+    border-radius: 3px;
+}
+button:hover{
+    background-color: rgb(42, 165, 61);
+    transform: scale(1.05);
+}
+input:valid{
+    border-color: green;
+}
+input:invalid{
+    border-color: red;
+}
